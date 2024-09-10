@@ -1,0 +1,84 @@
+*{
+padding: 0;
+margin: 0;
+font-family: 'Poppins', sans-serif;
+box-sizing: border-box;
+}
+
+body{
+background: darkslateblue;
+}
+.box{
+    width: 400px;
+    padding: 23px 35px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #fff;
+    border-radius: 10px;
+}
+
+/* css for h1 tag */
+.box h1{
+    color: #603564;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* css for p tag */
+.box p{
+    font-weight: 600;
+    font-size: 15px;
+    margin-top:8px;
+    margin-bottom:8px;
+}
+/* css for input tag */
+.box input{
+    width: 100%;
+    height: 50px;
+    border: 1px solid #494eea;
+    outline: 0;
+    padding: 10px;
+    margin: 10px 0 20px;
+    border-radius: 5px;
+}
+/* css for button tag */
+.box button{
+    width: 100%;
+    height: 50px;
+    background: #494eea;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 0;
+    outline: 0;
+    margin: 20px 0;
+    font-weight: 500;
+}
+#imgbox{
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.error{
+    animation: shake 0.1s linear 10;
+}
+@keyframes shake{
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(-2px);
+    }
+    50%{
+        transform: translateX(0);
+    }
+    75%{
+        transform: translateX(2px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
